@@ -1,0 +1,118 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+  }
+
+.header img {
+    width: calc(500px - 40px);
+}
+.center {
+    border: 1px solid #bb9039;
+    padding: 20px;
+}
+.container .center {
+    width: 500px;
+    margin: 100px auto;
+}
+.range-box > input{
+    width: 100%;
+}
+.input-label{
+    float:right;
+}
+.input-label input{
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+.final{
+    text-align: center;
+}
+.form-box form{
+    position: relative;
+}
+.form-box input{
+    margin: 5px;
+    padding: 3px;
+    width: 160px;
+}
+.form-box .apply{
+    width: 100px;
+    padding: 18px;
+    margin: 9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #fef7c4, #bd9440);
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #717171bf;
+    font-weight: 600;
+}
+.form-box .apply:hover{
+    background-image: linear-gradient(to right, #ece6b3, #977737);
+}
+.range-inp{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3; 
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+.range-inp::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: linear-gradient(to right, #fef7c4, #926e26);
+    cursor: pointer;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+}
+.after-label{
+    font-size: 14px;
+}
+.range-inp::-moz-range-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: linear-gradient(to right, #fef7c4, #926e26);
+    cursor: pointer;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+}
+#rataValue{
+    width: 70px;;
+}
+#monthValue{
+    width: 90px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .container .center {
+        width: 100%;
+    }
+    
+    .header img {
+        width: 100%;
+    }
+    .form-box .apply{
+        position: inherit;
+
+    }
+    .form-box form{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 402px) {
+    .form-box input{
+        width: 100%;
+    }
+}
