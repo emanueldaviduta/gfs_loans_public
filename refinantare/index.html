@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script src="index.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
                 <div class='range-box'>
                     <p>Valoarea creditului
                         <span class='input-label'>
-                            <input id='amountValue' type='text' oninput='onChange(this.value, "amountValue")' />
+                            <input id='amountValue' type='number' oninput='onChange(this.value, "amountValue")' max="5000000"/>
                             <span class='after-label'>lei</span>
                         </span>
                     </p>
@@ -30,7 +30,7 @@
                 <div class='range-box'>
                     <p>Perioadă
                         <span class='input-label'>
-                            <input id='monthValue'  type='text' />
+                            <input id='monthValue'  type='number' oninput='onChange(this.value, "monthValue")' max="360"/>
                             <span class='after-label'>luni</span>
                         </span>
                     </p>
@@ -39,7 +39,7 @@
                 <hr>
                 <div class='final'>
                     <span>Rată lunară estimativă:</span>
-                    <input id='rataValue' type='text' />
+                    <input id='rataValue' type='number' readonly/>
                     <span class='after-label'>lei</span>
                 </div>
                 <hr>

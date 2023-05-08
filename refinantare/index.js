@@ -23,6 +23,11 @@ initPage();
 
 function onChange(value, id) {
     var amv = document.getElementById(id);
+    if (id == 'monthValue' && value > 360) {
+        value = 360;
+    } else if (id == 'amountValue' && value > 5000000) {
+        value = 5000000;
+    }
     if (amv) {
         amv.value = value;
     }
